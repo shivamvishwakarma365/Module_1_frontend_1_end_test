@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI0w82IYtSlbxuzXU7eb0rxYfuLWITrFZYyA&usqp=CAU" type="image/x-icon">
+    
+    <title>Complex Ui</title>
+</head>
+<body>
+
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container mx-5">
+          <div class="navbar-brand">Complex UI</div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#section-1">Section 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-2">Section 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-3">Section 3</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+      <!-- carousel section -->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="p11.jpg" style="object-fit: cover;" class="c-image d-block w-100" alt="...">
+            <div class="carousel-caption d-block">
+              <h5>spring</h5>
+              <p>the most loving season</p>
+              <div class="btn btn-primary">Visit</div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="p2.jpg" style="object-fit: cover;" alt="...">
+            <div class="carousel-caption d-block">
+                <h5>skyview</h5>
+                <p>all blue sky</p>
+                <div class="btn btn-primary">Visit</div>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="p3.jpg" style="object-fit: cover;" alt="...">
+            <div class="carousel-caption d-block">
+                <h5>sunset</h5>
+                <p>dusk vibe</p>
+                <div class="btn btn-primary">Visit</div>
+              </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <!-- section 1 (flex) -->
+      <section class="section-1 my-5 p-5 text-dark" id="section-1">
+        <div class="container p-2 section-container">
+            <div class="items item-1">
+                <img class="item-img rounded-2" src="p7.jpg" style="object-fit: cover;" alt="">
+                <p class="text-center">description</p>
+            </div>
+            <div class="items item-2">
+                <img class="item-img rounded-2" src="p4.jpg" style="object-fit: cover;" alt="">
+                <p class="text-center">description</p>
+            </div>
+            <div class="items item-3">
+                <img class="item-img rounded-2" src="p2.jpg" style="object-fit: cover;" alt="">
+                <p class="text-center">description</p>
+            </div>
+        </div>
+      </section>
+
+      <hr class="custom-line">
+
+      <!-- section 2 (grid)-->
+      <section class="section-2 my-5" id="section-2">
+
+        <div class="container section-container-2">
+            <div class="photos col-span row-span" style="background-image: url(p10.jpg); "></div>
+            <div class="photos" style="background-image: url(p5.jpg);"></div>
+            <div class="photos" style="background-image: url(p7.jpg);"></div>
+            <div class="photos col-span" style="background-image: url(p8.jpg);"></div>
+            <div class="photos" style="background-image: url(p7.jpg);"></div>
+            <div class="photos" style="background-image: url(p7.jpg);"></div>
+            <div class="photos col-span" style="background-image: url(p5.jpg);"></div>
+            <div class="photos col-span row-span" style="background-image: url(p2.jpg);"></div>
+            <div class="photos row-span col-span-4" style="background-image: url(p2.jpg);"></div>
+        </div>
+      </section>
+
+      <hr class="custom-line">
+      <!-- card section -->
+    <div class="card-section container my-5" id="section-3">
+        <div class="row text-center g-5 align-items-center">
+            <div class="col-md">
+                <div class="card" >
+                    <img src="p6.jpg" class="card-img-top h-50" style="object-fit: cover;" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">tree 1</h5>
+                        <p class="card-text">all about this tree.it provides food which makes it amazing.</p>
+                        <a href="#" class="card-btn btn btn-primary">click</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card" >
+                    <img src="p6.jpg" class="card-img-top h-50" style="object-fit: cover;" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tree 2</h5>
+                        <p class="card-text">all about this tree.it provides food which makes it amazing.</p>
+                        <a href="#" class="card-btn btn btn-primary">click</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card" >
+                    <img src="p6.jpg" class="card-img-top h-50" alt="..." style="object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Tree 3</h5>
+                        <p class="card-text">all about this tree.it provides food which makes it amazing.</p>
+                        <a href="#" class="card-btn btn btn-primary">click</a>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+      
+
+    <!-- footer -->
+    <footer class="footer-container">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-3 p-2">
+                    <ul style="list-style: none; font-weight: bold;">Useful Links
+                        <li><a href="#">Link-1</a></li>
+                        <li><a href="#">Link-2</a></li>
+                        <li><a href="#">Link-3</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 p-2">
+                    <ul style="list-style: none; font-weight: bold;">More Useful Links
+                        <li><a href="#">Link-4</a></li>
+                        <li><a href="#">Link-5</a></li>
+                        <li><a href="#">Link-6</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 p-2">
+                    <ul style="list-style: none; font-weight: bold;">Contact Us
+                        <li class="lead">Email: example@example.com</li>
+                        <li class="lead">Phone: +91(8873670865)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-white text-dark copyright px-5 py-3 position-relative">
+            <p class="d-inline">&copy; 2023 Complex Ui. All Rights Reserved.</p>
+            <a href="#" class="position-absolute bottom-0 end-0 px-5 h2">
+                <i class="fas fa-arrow-alt-circle-up"></i>
+
+            </a>
+        </div>
+    </footer>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+     crossorigin="anonymous"></script>
+</body>
+</html>
